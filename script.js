@@ -17,3 +17,21 @@ yesBtn.addEventListener("click", () => {
   `;
 });
 
+// 💗 Floating hearts generator
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "💗";
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 10 + 16 + "px";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+
+// Create a heart every 800ms
+setInterval(createHeart, 800);
