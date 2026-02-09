@@ -73,3 +73,24 @@ button {
   line-height: 1.5;
 }
 
+/* 💗 Floating Hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  color: #ff4d6d;
+  animation: floatUp 6s linear forwards;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
