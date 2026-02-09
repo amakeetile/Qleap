@@ -35,3 +35,15 @@ function createHeart() {
 
 // Create a heart every 800ms
 setInterval(createHeart, 800);
+
+// 💕 Yes button slowly grows
+let yesScale = 1;
+let growInterval = setInterval(() => {
+  yesScale += 0.03; // subtle growth
+  yesBtn.style.transform = `scale(${yesScale})`;
+}, 2500);
+
+// Stop growing once she clicks Yes
+yesBtn.addEventListener("click", () => {
+  clearInterval(growInterval);
+});
