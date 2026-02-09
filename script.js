@@ -13,7 +13,7 @@ yesBtn.addEventListener("click", () => {
     💖 I had a feeling.<br><br>
     I wish I was there instead of doing this through a screen,<br>
     but this is me choosing you anyway.<br><br>
-    Happy Valentine’s Day 🫶
+    I love you baby, ha budget e letla re tla dira machuchere!🫶
   `;
 });
 
