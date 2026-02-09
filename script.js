@@ -47,3 +47,12 @@ let growInterval = setInterval(() => {
 yesBtn.addEventListener("click", () => {
   clearInterval(growInterval);
 });
+
+  // 🌫️ Fade-in text sequence
+const fadeElements = document.querySelectorAll(".fade");
+
+fadeElements.forEach((el, index) => {
+  setTimeout(() => {
+    el.classList.add("show");
+  }, index * 600);
+});
